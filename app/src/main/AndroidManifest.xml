@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="lananh.ptit.quanlykhachsanver1">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".admin.ThemPhongActivity"></activity>
+        <activity android:name=".client.TraPhongActivity" />
+        <activity android:name=".client.ThuePhongActivity" />
+        <activity android:name=".client.TrangThaiPhongActivity" />
+        <activity android:name=".admin.ChiTietPhongActivity" />
+        <activity android:name=".admin.ThongKeActivity" />
+        <activity android:name=".admin.QuanLyPhongActivity" />
+        <activity android:name=".admin.QuanLyTangActivity" />
+        <activity android:name=".client.ClientHomeActivity" />
+        <activity android:name=".admin.AdminHomeActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
