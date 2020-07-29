@@ -69,6 +69,17 @@ public class Database extends SQLiteOpenHelper {
         }
         return rh;
     }
+    public ArrayList<DoanhThu> thongKeDoanhThu(){
+        ArrayList<DoanhThu> doanhThus = new ArrayList<>();
+        Cursor c = this.getData("SELECT soP, SUM(thanhTien) FROM lichsuthue GROUP BY soP");
+        while (c.moveToNext()){
+            DoanhThu dt = new DoanhThu();
+            dt.setSoP(c.getInt(0));
+            dt.setDoanhthu(c.getInt(1));
+            doanhThus.add(dt);
+        }
+        return doanhThus;
+    }
     @Override
     public void onCreate(SQLiteDatabase db) {
 

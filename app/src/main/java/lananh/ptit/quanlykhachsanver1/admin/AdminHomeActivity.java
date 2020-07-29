@@ -40,5 +40,12 @@ public class AdminHomeActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        btThongKe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AdminHomeActivity.this, ThongKeActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
